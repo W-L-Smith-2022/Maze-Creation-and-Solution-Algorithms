@@ -25,7 +25,7 @@ The mazes are solved from the top left to the bottom right in this project. <br 
 * Black Cells = Walls
 * Red Cells = Current Cell
 * Blue Cells = Cells Being Tested for Unexplored Neighbors
-<br />
+
 # Information About Other Projects <br />
 Link to YouTube Channel: https://www.youtube.com/channel/UCOnHMcTYB7Po4chwtugLfyw <br />
 Link to my GitHub: https://github.com/W-L-Smith-2022
