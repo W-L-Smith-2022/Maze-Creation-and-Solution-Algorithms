@@ -11,7 +11,7 @@ We will explore two "perfect" maze creation algorithms and solve the resulting m
 The demonstrations in this project do not represent the time it takes the algorithm to accomplish it's task. At this scale, most of these algorithms finish nearly instantaneously. <br />
 The mazes are solved from the top left to the bottom right in this project. <br />
 ## Perfect Maze Creation Algorithms <br />
-### Hunt and Kill
+### Hunt and Kill:
 #### How it Works:
 * This algorithm starts like the Recursive Backtracker maze creation algorithm.
 * It explores a randomly picked cell adjacent to the starting cell and sets the new cell as the current cell. 
@@ -25,7 +25,51 @@ The mazes are solved from the top left to the bottom right in this project. <br 
 * Black Cells = Walls
 * Red Cells = Current Cell
 * Blue Cells = Cells Being Tested for Unexplored Neighbors
-### Growing Tree
+### Growing Tree:
+#### How it Works:
+* A starting cell is added to a list and is set as the current cell. And unexplored neighbor of the current cell is randomly chosen, explored, and added to the list.
+* A cell is then chosen from the list and is set as the current cell.
+* If the current cell has no unexplored neighbors, it is removed from the list.
+* If the current cell has any unexplored neighbors, one of them is randomly chosen, explored, and is added to the list.
+* This is repeated until there is nothing left in the list.
+#### How to Choose the Current Cell:
+* The interesting part is how you choose what cell from the list is set to be your current cell.
+* If you choose the last (or most recent) cell on the list, the algorithm mimics (or effectively becomes) the Recursive Backtracker Algorithm.
+* If you randomly choose a cell from the list, the algorithm produces similar results to prim's algorithm.
+* If you always choose the first cell on the list, the maze becomes very "blocky."
+* You can combine various ways of selecting your current cell to get some interesting textures.
+* In this project's Growing Tree demonstrations, the mazes were created where the first cell on the list was chosen 65% of the time and a randomly chosen cell from the list was chosen 35% of the time.
+#### Key for Growing Tree Visualizations:
+* White = Explored
+* Gray = Unexplored
+* Black = Wall
+* Red = Current Cell
+* Blue = Cell Being Added to List
+## Perfect Maze Solution Algorithms <br />
+### Dead End Filling:
+#### How it Works:
+* The algorithm systematically scans through the array looking for any cell that hass only one non fillled neighbor (aka dead end).
+* It fills the discovered dead end unless it is the start or end.
+* It repeats these steps until there are no more dead ends left.
+* This results in a path of unfilled cells from the start to the end.
+#### Key for Dead End Filling Visualizations:
+* White = Unexplored Cell
+* Black = Wall
+* Gray = Filled in Cell
+* Blue = Cell Being Filled In
+* Red = Path
+### Shortest Path Finder:
+#### How it Works:
+* The starting cell is filled with "water."
+* The cells filled with "water" fill all unfilled adjacent cells with "water," and the cells record what cell they were filled by.
+* This is repeated until either the maze is filled with "water," or until the end is filled.
+* The path is then traced from the end back to the start by following which cell filled which from the end to the start.
+#### Key for Dead End Filling Visualizations:
+* White = Unfilled Cell
+* Black = Wall
+* Blue = Cells Filled with "Water"
+* Yellow = Cells Being Filled
+* Red = Path
 # Information About Other Projects <br />
 Link to YouTube Channel: https://www.youtube.com/channel/UCOnHMcTYB7Po4chwtugLfyw <br />
 Link to my GitHub: https://github.com/W-L-Smith-2022
