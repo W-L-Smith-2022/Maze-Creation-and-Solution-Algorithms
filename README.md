@@ -13,7 +13,7 @@ The mazes are solved from the top left to the bottom right in this project. <br 
 ## Perfect Maze Creation Algorithms <br />
 ### Hunt and Kill <br />
 How it Works: <br />
-This algorithm starts like the Recursive Backtracker maze creation algorithm. <br />
+* This algorithm starts like the Recursive Backtracker maze creation algorithm. <br />
 It explores a randomly picked cell adjacent to the starting cell and sets the new cell as the current cell. <br />
 It then randomly picks a cell adjacent to the current cell, explores the new cell, sets the new cell as the current cell, and repeats this process until it dead ends into itself. <br />
 When this happens, the program "Hunts" through the maze, looking for an explored cell adjacent to an unexplored cell. <br />
