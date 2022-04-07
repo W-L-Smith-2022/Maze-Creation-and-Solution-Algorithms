@@ -9,7 +9,7 @@ In computer science, a "perfect" maze is one where there is one and only one pat
 A "perfect maze solution algorithm is one that solves "perfect" mazes. <br />
 We will explore two "perfect" maze creation algorithms and solve the resulting mazes with two "perfect" maze solution algorithms. <br />
 The demonstrations in this project do not represent the time it takes the algorithm to accomplish it's task. At this scale, most of these algorithms finish nearly instantaneously. <br />
-The mazes are solved from the top right to the bottom left in this project. <br />
+The mazes are solved from the top left to the bottom right in this project. <br />
 <br />
 # Information About Other Projects <br />
 Link to YouTube Channel: https://www.youtube.com/channel/UCOnHMcTYB7Po4chwtugLfyw <br />
