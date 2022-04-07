@@ -10,6 +10,21 @@ A "perfect maze solution algorithm is one that solves "perfect" mazes. <br />
 We will explore two "perfect" maze creation algorithms and solve the resulting mazes with two "perfect" maze solution algorithms. <br />
 The demonstrations in this project do not represent the time it takes the algorithm to accomplish it's task. At this scale, most of these algorithms finish nearly instantaneously. <br />
 The mazes are solved from the top left to the bottom right in this project. <br />
+## Perfect Maze Creation Algorithms <br />
+### Hunt and Kill <br />
+How it Works: <br />
+This algorithm starts like the Recursive Backtracker maze creation algorithm. <br />
+It explores a randomly picked cell adjacent to the starting cell and sets the new cell as the current cell. <br />
+It then randomly picks a cell adjacent to the current cell, explores the new cell, sets the new cell as the current cell, and repeats this process until it dead ends into itself. <br />
+When this happens, the program "Hunts" through the maze, looking for an explored cell adjacent to an unexplored cell. <br />
+If it finds an acceptable cell, it sets this as the new current cell and repeats the process. <br />
+If it scans the entire maze and does not finda an acceptable cell, that means that the maze has been created and the program ends. <br />
+Key for Hunt and Kill Visualizations: <br />
+White Cells = Explored <br />
+Gray Cells = Unexplored <br />
+Black Cells = Walls <br />
+Red Cells = Current Cell <br />
+Blue Cells = Cells Being Tested for Unexplored Neighbors <br />
 <br />
 # Information About Other Projects <br />
 Link to YouTube Channel: https://www.youtube.com/channel/UCOnHMcTYB7Po4chwtugLfyw <br />
