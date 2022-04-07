@@ -19,14 +19,7 @@ How it Works:
 * When this happens, the program "Hunts" through the maze, looking for an explored cell adjacent to an unexplored cell.
 * If it finds an acceptable cell, it sets this as the new current cell and repeats the process.
 * If it scans the entire maze and does not finda an acceptable cell, that means that the maze has been created and the program ends.
-<br />
-Key for Hunt and Kill Visualizations:
-* White Cells = Explored
-* Gray Cells = Unexplored
-* Black Cells = Walls
-* Red Cells = Current Cell
-* Blue Cells = Cells Being Tested for Unexplored Neighbors
-<br />
+
 # Information About Other Projects <br />
 Link to YouTube Channel: https://www.youtube.com/channel/UCOnHMcTYB7Po4chwtugLfyw <br />
 Link to my GitHub: https://github.com/W-L-Smith-2022
