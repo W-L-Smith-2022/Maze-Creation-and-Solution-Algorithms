@@ -4,6 +4,7 @@ This project works with the Hunt and Kill perfect maze creation algorithm, the G
 Link to playlist of YouTube videos of visualizations of maze creation and solution algorithms: https://www.youtube.com/playlist?list=PLDQ-bcm9sjaUVhJ3mAJmWygHiuV5zggHo <br />
 List and description of various maze creation and solution algorithms: https://www.astrolog.org/labyrnth/algrithm.htm <br />
 List, description, and visualization of various maze creation and solution algorithms: https://www.jamisbuck.org/mazes/ <br/>
+Link to YouTube video about this: https://youtu.be/_z4aos8tM2M <br />
 ### What is a "Perfect" Maze?
 In computer science, a "perfect" maze is one where there is one and only one path from any one cell to any other cell. <br />
 A "perfect maze solution algorithm is one that solves "perfect" mazes. <br />
